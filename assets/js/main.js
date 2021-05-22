@@ -22,7 +22,7 @@ const DOMElements = {
 // Default 
 const defsValue = {
    tabOffsetTop: DOMElements.tab.offsetTop,
-   gitToken: "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",
+   gitToken: "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",
    gitUser: "enipx",
    monthNames: ["Jan", "Feb", "Mar", "Apr", "May", "June",
       "July", "Aug", "Sep", "Oct", "Nov", "Dec"
@@ -196,6 +196,7 @@ const fetchUsernameDataHandler = () => {
       })
       .then(res => res.json())
       .then(data => {
+         console.log(data)
          const userData = data.data.user;
 
          // Set up profile
